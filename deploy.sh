@@ -1,3 +1,5 @@
+#!/bin/bash
+
 docker build -t alexacid88/multi-client:latest -t alexacid88/multi-client:$SHA -f ./client/Dockerfile ./client
 docker build -t alexacid88/multi-server:latest -t alexacid88/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t alexacid88/multi-worker:latest -t alexacid88/multi-worker:$SHA -f ./worker/Dockerfile ./worker

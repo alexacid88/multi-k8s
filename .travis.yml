@@ -21,7 +21,8 @@ script:
   - docker run -e CI=true alexacid88/react-test npm run test
 
 deploy:
+  skip_cleanup: true
   provider: script
-  script: bash ./bash.sh
+  script: bash ./deploy.sh
   on:
     branch: develop
